@@ -2,8 +2,8 @@ import math
 import pygame
 import random
 
-screen_width = 600
-screen_height = 700
+screen_width = 800
+screen_height = 900
 player_startx = 370
 player_starty = 380
 enemy_starty_min = 50
@@ -227,3 +227,9 @@ while running:
         player(playerX, playerY)
         show_score(textX, textY)
         pygame.display.update()
+
+pygame.mixer.music
+pygame.init()
+pygame.mixer.music.load("bgm.mp3")
+pygame.mixer.music.play(-1)
+pygame.mixer.music.set_volume(0.5)
